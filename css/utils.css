@@ -1,0 +1,87 @@
+:root {
+  --colorPrimary: darkcyan;
+}
+
+.btn-primary {
+  padding: 10px;
+  color: white;
+  background-color: var(--colorPrimary);
+  border: 2px solid var(--colorPrimary);
+  transition: all 0.3s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-primary:hover {
+  color: var(--colorPrimary);
+  background-color: white;
+}
+
+.btn-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  margin: 3rem auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+div {
+  margin: 2rem;
+}
+
+.site-element {
+  padding: 0;
+}
+
+.preview {
+  margin: 0;
+  padding: 0;
+  border: 2px solid black;
+}
+
+.navCode ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.navCode ul li {
+  list-style-type: none;
+  padding: 10px;
+  border-radius: 0px;
+}
+
+.html,
+.css,
+.js {
+  width: 80%;
+  background-color: rgb(36, 36, 36);
+  color: white;
+  padding: 10px;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.copy {
+  align-self: flex-end;
+  position: absolute;
+}

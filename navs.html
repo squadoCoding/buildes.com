@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Using this ammazing tool,  you can easily created beautiful website degignes just by copying and pasting"
+    />
+    <meta name="robots" content="INDEX, FOLLOW" />
+    <link rel="stylesheet" href="/css/nav.css" />
+    <link rel="stylesheet" href="/css/navs.css" />
+    <link rel="stylesheet" href="/css/utils.css" />
+    <title>BulidDes.com | Navigation menues</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/navs.html" id="current">Navigations</a></li>
+          <li><a href="">Home pages</a></li>
+          <li><a href="">Buttons</a></li>
+          <li><a href="">Inputs</a></li>
+          <li><a href="">Heading+Paragraphs</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1>Navigation menues for you!!</h1>
+      </section>
+      <section class="site-element">
+        <div class="preview">
+          <nav id="nav-1">
+            <div id="nav-1-logo">
+              <img src="/img/squadoCoding.png" />
+            </div>
+            <ul>
+              <li>Home</li>
+              <li>About</li>
+              <li>Contact</li>
+            </ul>
+          </nav>
+          <style>
+            #nav-1 {
+              --navBg: rgb(229, 229, 229);
+              display: flex;
+              align-items: center;
+              padding: 10px;
+            }
+
+            #nav-1 #nav-1-logo {
+              box-shadow: 2px 2px 19px -2px black;
+              width: fit-content;
+              padding: 5px;
+              border-radius: 100%;
+              cursor: pointer;
+              background-color: var(--navBg);
+            }
+
+            #nav-1 #nav-1-logo:hover {
+              box-shadow: none;
+            }
+
+            #nav-1 #nav-1-logo img {
+              width: 40px;
+              border-radius: 100%;
+            }
+
+            #nav-1 ul {
+              background-color: var(--navBg);
+              display: flex;
+              padding: 10px 20px;
+              padding-left: 40px;
+              z-index: -1;
+              position: relative;
+              left: -45px;
+              box-shadow: 2px 2px 19px -2px black;
+              border-top-left-radius: 30px;
+              border-bottom-left-radius: 30px;
+              border-bottom-right-radius: 30px;
+              transform-origin: left;
+              transform: rotate(180deg);
+              transition: all 0.3s;
+            }
+
+            #nav-1 ul li {
+              list-style-type: none;
+              margin: 0px 15px;
+              font-size: 1.1rem;
+            }
+          </style>
+          <script>
+            const logo = document.getElementById("nav-1-logo");
+            const ul = document.getElementById("nav-1").lastElementChild;
+
+            ul.style.transform = "rotate(180deg)";
+
+            logo.addEventListener("click", (e) => {
+              if (ul.style.transform == "rotate(180deg)") {
+                ul.style.transform = "rotate(0deg)";
+              } else {
+                ul.style.transform = "rotate(180deg)";
+              }
+            });
+          </script>
+        </div>
+        <div class="code">
+          <div class="navCode">
+            <ul>
+              <li class="btn-primary hLink" onclick="this.parentElement.parentElement.nextElementSibling.style.display = `flex`;this.parentElement.parentElement.nextElementSibling.nextElementSibling.style.display = `none`;this.parentElement.parentElement.nextElementSibling.nextElementSibling.nextElementSibling.style.display = `none`">HTML</li>
+              <li class="btn-primary cLink" onclick="this.parentElement.parentElement.nextElementSibling.style.display = `none`;this.parentElement.parentElement.nextElementSibling.nextElementSibling.style.display = `flex`;this.parentElement.parentElement.nextElementSibling.nextElementSibling.nextElementSibling.style.display = `none`">Css</li>
+              <li class="btn-primary jLink" onclick="this.parentElement.parentElement.nextElementSibling.style.display = `none`;this.parentElement.parentElement.nextElementSibling.nextElementSibling.style.display = `none`;this.parentElement.parentElement.nextElementSibling.nextElementSibling.nextElementSibling.style.display = `flex`">Javascript</li>
+            </uls>
+          </div>
+          <div class="html">
+            <button class="btn-primary copy" onclick="navigator.clipboard.writeText(this.nextElementSibling.innerText)">Copy</button>
+            <pre>
+&lt;nav id="nav-1"&gt;
+  &lt;div id="nav-1-logo"&gt;
+    &lt;img src="/img/squadoCoding.png" /&gt;
+  &lt;/div&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Home &lt;/li&gt;
+    &lt;li&gt;About &lt;/li&gt;
+    &lt;li&gt;Contact &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</pre>
+            </div>
+            <div class="css">
+            <button class="btn-primary copy" onclick="navigator.clipboard.writeText(this.nextElementSibling.innerText)">Copy</button>
+            <pre>
+#nav-1 {
+  --navBg: rgb(229, 229, 229);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+#nav-1 #nav-1-logo {
+  box-shadow: 2px 2px 19px -2px black;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 100%;
+  cursor: pointer;
+  background-color: var(--navBg);
+}
+
+#nav-1 #nav-1-logo:hover {
+  box-shadow: none;
+}
+
+#nav-1 #nav-1-logo img {
+  width: 40px;
+  border-radius: 100%;
+}
+
+#nav-1 ul {
+  background-color: var(--navBg);
+  display: flex;
+  padding: 10px 20px;
+  padding-left: 40px;
+  z-index: -1;
+  position: relative;
+  left: -45px;
+  box-shadow: 2px 2px 19px -2px black;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  transform-origin: left;
+  transform: rotate(180deg);
+  transition: all 0.3s;
+}
+
+#nav-1 ul li {
+  list-style-type: none;
+  margin: 0px 15px;
+  font-size: 1.1rem;
+}</pre>
+            </div>
+            <div class="js">
+              <button class="btn-primary copy" onclick="navigator.clipboard.writeText(this.nextElementSibling.innerText)">Copy</button>
+              <pre>
+const logo = document.getElementById("nav-1-logo");
+const ul = document.getElementById("nav-1").lastElementChild;
+
+ul.style.transform = "rotate(180deg)";
+
+logo.addEventListener("click", (e) => {
+  if (ul.style.transform == "rotate(180deg)") {
+    ul.style.transform = "rotate(0deg)";
+  } else {
+    ul.style.transform = "rotate(180deg)";
+  }
+});</pre>
+              </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
